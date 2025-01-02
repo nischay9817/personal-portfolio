@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: "Poppins";
+}
+
+/* nav-bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.Portfolio{
+    flex-grow: 1;
+}
+
+nav div a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+nav div a:hover{
+    color: grey;
+}
+
+/* herosection */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    gap: 45px;
+}
+
+.text-white{
+    color: white;
+}
+
+.font-size{
+    font-size: 45px;
+}
+
+.fontsize-mid{
+    font-size: 20px;
+}
+.fontsize-large{
+    font-size: 50px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-media div a i{
+    padding-top: 10px;
+    color: rgb(35, 85, 105);
+    font-size: 30px;
+    border: solid rgb(35, 85, 105) 2px;
+    padding: 5px 5px;
+    border-radius: 50%;
+}
+.social-media div a i:hover{
+    color: rgb(17, 47, 59);
+}
+
+.btn{
+    margin-top: 40px;
+}
+.btn-part{
+    border: 1px solid rgb(35, 85, 105);
+    padding: 10px 40px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(62, 128, 128);
+}
+.btn-part:hover{
+    background-color: rgb(24, 66, 66);
+}
+
+.profileimage{
+    margin-right: 250px;
+    box-sizing: border-box;
+}
+.profileimage img{
+    width: 150%;
+    border: 5px solid rgb(62, 128, 128);
+    border-radius: 50%;
+    position: relative;
+    animation: donkey 2s infinite ease-in-out alternate;
+}
+@keyframes donkey{
+    from{
+        top: -10px;
+    }
+    to{
+        top: 10px;
+    }
+}
